@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Наумов](https://up.htmlacademy.ru/htmlcss/27/user/57563).
-* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad0v0).
+* Наставник: [Ольга Вадясова](https://up.htmlacademy.ru/htmlcss/27/user/46068).
 
 ---
 

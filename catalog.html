@@ -21,12 +21,57 @@
         </nav>
     </header>
     <main>
-        <div>
+        <section>
             <div class="background-two"></div>
-            <!-- Здесь будет форма поиска -->
-        </div>
+            <form action="#" method="post">
+                <ul>
+                    <li>
+                        <h2>Инфраструктура:</h2>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="pool" id="pool" checked>
+                                <label for="pool">Бассейн</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="parking" id="parking">
+                                <label for="parking">Парковка</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="wi-fi" id="wi-fi">
+                                <label for="wi-fi">Wi-Fi</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Тип жилья:</h2>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="hotel" id="hotel" checked>
+                                <label for="hotel">Гостиница</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="motel" id="motel" checked>
+                                <label for="motel">Мотель</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="apartments" id="apartments" checked>
+                                <label for="apartments">Апартаменты</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>
+                    <h2>Стоимость в сутки (Р):</h2>
+                    <div>
+                        <label>От <input type="text" name="min" value="0"></label>
+                        <label>До <input type="text" name="max" value="3000"></label>
+                    </div>
+                    <!--/////////Прокрутка цены (Пока нет идей как её сделать :О )/////////-->
+                    <button type="submit">Показать</button>
+                </div>
+            </form>
+        </section>
         <div>
-            <!-- Здесь будет сортировка результата поиска -->
             <span>Найдено: 3</span>
             <span>Сортировка:</span>
             <ul>

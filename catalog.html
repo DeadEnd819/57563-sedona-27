@@ -16,61 +16,64 @@
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
+                <li><a href="#">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
+        <div>
             <div class="background-two"></div>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form action="https://echo.htmlacademy.ru" method="GET">
                 <ul>
                     <li>
-                        <h2>Инфраструктура:</h2>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="pool" id="pool" checked>
-                                <label for="pool">Бассейн</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="parking" id="parking">
-                                <label for="parking">Парковка</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="wi-fi" id="wi-fi">
-                                <label for="wi-fi">Wi-Fi</label>
-                            </li>
-                        </ul>
+                        <fieldset>
+                            <legend>Инфраструктура:</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="pool" id="pool" checked>
+                                    <label for="pool">Бассейн</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="parking" id="parking">
+                                    <label for="parking">Парковка</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                                    <label for="wi-fi">Wi-Fi</label>
+                                </li>
+                            </ul>
+                        </fieldset>
                     </li>
                     <li>
-                        <h2>Тип жилья:</h2>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="hotel" id="hotel" checked>
-                                <label for="hotel">Гостиница</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="motel" id="motel" checked>
-                                <label for="motel">Мотель</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="apartments" id="apartments" checked>
-                                <label for="apartments">Апартаменты</label>
-                            </li>
-                        </ul>
+                        <fieldset>
+                            <legend>Тип жилья:</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="hotel" id="hotel" checked>
+                                    <label for="hotel">Гостиница</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="motel" id="motel" checked>
+                                    <label for="motel">Мотель</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="apartments" id="apartments" checked>
+                                    <label for="apartments">Апартаменты</label>
+                                </li>
+                            </ul>
+                        </fieldset>
                     </li>
                 </ul>
-                <div>
-                    <h2>Стоимость в сутки (Р):</h2>
-                    <div>
-                        <label>От <input type="text" name="min" value="0"></label>
-                        <label>До <input type="text" name="max" value="3000"></label>
-                    </div>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <label>От <input type="text" name="min" value="0"></label>
+                    <label>До <input type="text" name="max" value="3000"></label>
                     <!--/////////Прокрутка цены/////////-->
-                    <button type="submit">Показать</button>
-                </div>
+                </fieldset>
+                <button type="submit">Показать</button>
             </form>
-        </section>
+        </div>
         <div>
             <span>Найдено: 3</span>
             <span>Сортировка:</span>
@@ -81,14 +84,10 @@
             </ul>
             <ul>
                 <li>
-                    <a href="#">
-                        <div class="icon-up"></div>
-                    </a>
+                    <a href="#" class="icon-up" aria-label="Сортировка по возрастанию"></a>
                 </li>
                 <li>
-                    <a href="#">
-                        <div class="icon-down"></div>
-                    </a>
+                    <a href="#" class="icon-down" aria-label="Сортировка по убыванию"></a>
                 </li>
             </ul>
         </div>
@@ -103,8 +102,8 @@
                     <span>от 4000 р.</span>
                     <span>Рейтинг: 8,5</span>
                     <div class="star star-four"></div>
-                    <a href="#">Подробнее</a>
-                    <button type="button">Забронировать</button>
+                    <a href="#" class="details">Подробнее</a>
+                    <a href="#" class="reserve">Забронировать</a>
                 </li>
                 <li>
                     <img src="img/photo-desert-quail-inn.jpg" width="135" height="90" alt="Desert quail inn">
@@ -115,8 +114,8 @@
                     <span>от 3000 р.</span>
                     <span>Рейтинг: 8,9</span>
                     <div class="star star-three"></div>
-                    <a href="#">Подробнее</a>
-                    <button type="button">Забронировать</button>
+                    <a href="#" class="details">Подробнее</a>
+                    <a href="#" class="reserve">Забронировать</a>
                 </li>
                 <li>
                     <img src="img/photo-villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at pocodiablo">
@@ -127,8 +126,8 @@
                     <span>от 2000 р.</span>
                     <span>Рейтинг: 9,2</span>
                     <div class="star star-two"></div>
-                    <a href="#">Подробнее</a>
-                    <button type="button">Забронировать</button>
+                    <a href="#" class="details">Подробнее</a>
+                    <a href="#" class="reserve">Забронировать</a>
                 </li>
             </ul>
         </section>
@@ -136,13 +135,19 @@
     <footer class="main-footer">
         <div>
             <span>#visitsedona</span>
-            <p>Тел: +7 (495) 666-02-66</p>
+            <p>Тел: <a href="tel:74956660266">+7 (495) 666-02-66</a></p>
         </div>
         <div>
             <ul>
-                <li><a href="https://twitter.com">Твиттер</a></li>
-                <li><a href="https://www.facebook.com">Фейсбук</a></li>
-                <li><a href="https://www.youtube.com">Ютуб</a></li>
+                <li>
+                    <a href="https://twitter.com" class="icon-twitter" aria-label="Седона в Твиттере"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" class="icon-facebook" aria-label="Седона в Фейсбуке"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" class="icon-youtube" aria-label="Седона в Ютубе"></a>
+                </li>
             </ul>
         </div>
         <div>

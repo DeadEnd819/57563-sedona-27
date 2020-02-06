@@ -38,17 +38,17 @@
                 <li>
                     <ul>
                         <li>
-                            <div class="icon-home"></div>
+                            <span class="icon-home"></span>
                             <h2>Жилье</h2>
                             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                         </li>
                         <li>
-                            <div class="icon-burger"></div>
+                            <span class="icon-burger"></span>
                             <h2>Еда</h2>
                             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </li>
                         <li>
-                            <div class="icon-gift"></div>
+                            <span class="icon-gift"></span>
                             <h2>Сувениры</h2>
                             <p>Не только китайского, но и местного производства!</p>
                         </li>
@@ -86,26 +86,26 @@
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <div>
                 <button type="button" class="search-form-btn">Поиск гостиницы в Седоне</button>
-                <form action="https://echo.htmlacademy.ru" method="post">
+                <form action="https://echo.htmlacademy.ru" method="GET">
                     <div>
                         <label>Дата заезда: <input type="text" name="arrival-date" placeholder="24 апреля 2017"></label>
-                        <div class="btn-calendar"></div>
+                        <button type="button" aria-label="Выбор даты заезда по календарю"><span class="icon-calendar"></span></button>
                         <label>Дата выезда: <input type="text" name="departure-date" placeholder="4 июля 2017"></label>
-                        <div class="btn-calendar"></div>
+                        <button type="button" aria-label="Выбор даты выезда по календарю"><span class="icon-calendar"></span></button>
                     </div>
                     <div>
-                        <label for="adults">Взрослые: </label>
+                        <label for="adult">Взрослые: </label>
                         <button type="button">-</button>
-                        <input type="text" id="adults" value="2">
+                        <input type="text" name="adults" id="adult" value="2">
                         <button type="button">+</button>
                     </div>
                     <div>
-                        <label for="children">Дети: </label>
+                        <label for="child">Дети: </label>
                         <button type="button">-</button>
-                        <input type="text" id="children" value="0">
+                        <input type="text" name="children" id="child" value="0">
                         <button type="button">+</button>
                     </div>
-                    <button type="button" class="search-btn">Найти</button>
+                    <button type="submit" class="search-btn">Найти</button>
                 </form>
             </div>
         </section>
@@ -116,13 +116,19 @@
     <footer class="main-footer">
         <div>
             <span>#visitsedona</span>
-            <p>Тел: +7 (495) 666-02-66</p>
+            <p>Тел: <a href="tel:74956660266">+7 (495) 666-02-66</a></p>
         </div>
         <div>
             <ul>
-                <li><a href="https://twitter.com">Твиттер</a></li>
-                <li><a href="https://www.facebook.com">Фейсбук</a></li>
-                <li><a href="https://www.youtube.com">Ютуб</a></li>
+                <li>
+                    <a href="https://twitter.com" class="icon-twitter" aria-label="Седона в Твиттере"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" class="icon-facebook" aria-label="Седона в Фейсбуке"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" class="icon-youtube" aria-label="Седона в Ютубе"></a>
+                </li>
             </ul>
         </div>
         <div>

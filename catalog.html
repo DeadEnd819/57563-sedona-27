@@ -16,7 +16,7 @@
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта штата</a></li>
-                <li><a href="#">Гостиницы</a></li>
+                <li><a>Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -25,46 +25,40 @@
         <div>
             <div class="background-two"></div>
             <form action="https://echo.htmlacademy.ru" method="GET">
-                <ul>
-                    <li>
-                        <fieldset>
-                            <legend>Инфраструктура:</legend>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="pool" id="pool" checked>
-                                    <label for="pool">Бассейн</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="parking" id="parking">
-                                    <label for="parking">Парковка</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="wi-fi" id="wi-fi">
-                                    <label for="wi-fi">Wi-Fi</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </li>
-                    <li>
-                        <fieldset>
-                            <legend>Тип жилья:</legend>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="hotel" id="hotel" checked>
-                                    <label for="hotel">Гостиница</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="motel" id="motel" checked>
-                                    <label for="motel">Мотель</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="apartments" id="apartments" checked>
-                                    <label for="apartments">Апартаменты</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </li>
-                </ul>
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="pool" id="pool" checked>
+                            <label for="pool">Бассейн</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="parking" id="parking">
+                            <label for="parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="wi-fi" id="wi-fi">
+                            <label for="wi-fi">Wi-Fi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="hotel" id="hotel" checked>
+                            <label for="hotel">Гостиница</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="motel" id="motel" checked>
+                            <label for="motel">Мотель</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="apartments" id="apartments" checked>
+                            <label for="apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
                 <fieldset>
                     <legend>Стоимость в сутки (Р):</legend>
                     <label>От <input type="text" name="min" value="0"></label>

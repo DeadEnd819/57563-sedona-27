@@ -4,9 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="wrapper">
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
@@ -27,15 +31,15 @@
             <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
-        <section>
-            <ul>
-                <li>
+        <section class="features">
+            <ul class="features-list">
+                <li class="list-item">
                     <h2>Настоящий городок</h2>
                     <span>-№1-</span>
                     <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                     <img src="img/photo-town.jpg" width="800" height="256" alt="Достопримечательности Седоны">
                 </li>
-                <li>
+                <li class="list-item">
                     <ul>
                         <li>
                             <h2 class="house">Жилье</h2>
@@ -51,13 +55,13 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="list-item">
                     <img src="img/photo-bridge.jpg" width="800" height="256" alt="Достопримечательности Седоны">
                     <h2>Там есть мост Дьявола</h2>
                     <span>-№2-</span>
                     <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
                 </li>
-                <li>
+                <li class="list-item">
                     <ul>
                         <li>
                             <h2>Небольшая площадь</h2>
@@ -81,14 +85,14 @@
         <section>
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <div>
+            <div class="search">
                 <button type="button" class="search-form-btn">Поиск гостиницы в Седоне</button>
                 <form action="https://echo.htmlacademy.ru" method="GET">
                     <div>
                         <label>Дата заезда: <input type="text" name="arrival-date" placeholder="24 апреля 2017"></label>
-                        <button type="button" aria-label="Выбор даты заезда по календарю" class="icon-calendar"></button>
+                        <button type="button" aria-label="Выбор даты заезда по календарю" class="calendar-btn"></button>
                         <label>Дата выезда: <input type="text" name="departure-date" placeholder="4 июля 2017"></label>
-                        <button type="button" aria-label="Выбор даты выезда по календарю" class="icon-calendar"></button>
+                        <button type="button" aria-label="Выбор даты выезда по календарю" class="calendar-btn"></button>
                     </div>
                     <div>
                         <label for="adult">Взрослые: </label>
@@ -111,30 +115,31 @@
         </div>
     </main>
     <footer class="main-footer">
-        <div>
+        <div class="contacts">
             <span>#visitsedona</span>
             <p>Тел: <a href="tel:74956660266">+7 (495) 666-02-66</a></p>
         </div>
-        <div>
+        <div class="social">
             <ul>
                 <li>
-                    <a href="https://twitter.com" class="icon-twitter" aria-label="Седона в Твиттере"></a>
+                    <a href="https://twitter.com" class="social-btn icon-twitter" aria-label="Седона в Твиттере"></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com" class="icon-facebook" aria-label="Седона в Фейсбуке"></a>
+                    <a href="https://www.facebook.com" class="social-btn icon-facebook" aria-label="Седона в Фейсбуке"></a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com" class="icon-youtube" aria-label="Седона в Ютубе"></a>
+                    <a href="https://www.youtube.com" class="social-btn icon-youtube" aria-label="Седона в Ютубе"></a>
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="copyright">
             <span>Website by</span>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
             </a>
         </div>
     </footer>
+</div>
 </body>
 
 </html>

@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     color: #000;
     text-transform: uppercase;
+    overflow-wrap: break-word;
 
     background-color: #f2f2f2;
 }
@@ -16,9 +17,6 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
-}
 .wrapper {
     margin: 0 auto;
     max-width: 1200px;
@@ -42,4 +40,110 @@ li {
 .site-navigation a {
     font-weight: 700;
     color: #000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+section {
+    display: block;
+}
+
+.intro {
+    display: block;
+    text-align: center;
+}
+
+
+
+.intro img {
+    margin-top: 78px;
+    padding-bottom: 92px;
+}
+
+.intro h1 {
+    font-size: 21px;
+    font-weight: 700;
+    max-width: 450px;
+    margin:0 auto 21px;
+
+}
+
+.background-one {
+    height: 518px;
+    background-image: url("../img/background-main.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.intro::after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 57px;
+    position: absolute;
+    background-image: url("../img/intro-mask.svg");
+    background-size: 1200px 57px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.features-list,
+.list-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-item {
+    text-align: center;
+    height: 256px;
+}
+
+.list-item h2 {
+    max-width: 156px;
+    margin: 0 auto 8px;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.list-item span {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 21px;
+}
+
+.list-item p {
+    max-width: 280px;
+    margin: 0 auto;
+    line-height: 21px;
+}
+
+.list-item:first-child {
+    padding-top: 0;
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+.list-item:first-child .item-container {
+    padding: 53px 20px 40px;
+    width: 33%;
+    float: left;  
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.list-item:first-child .item-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.list-item:first-child .item-container-img {
+    height: 256px;
+    width: 66.6%;
+    float: right;
 }

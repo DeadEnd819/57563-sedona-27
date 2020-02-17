@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -9,7 +8,6 @@ body {
     color: #000;
     text-transform: uppercase;
     overflow-wrap: break-word;
-
     background-color: #f2f2f2;
 }
 
@@ -17,10 +15,14 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1200px;
-
     background-color: #ffffff;
     box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
@@ -29,7 +31,7 @@ a {
     font-size: 14px;
     line-height: 26px;
     color: #000;
-
+    min-height: auto;
     background-color: #ffffff;
 }
 
@@ -56,8 +58,6 @@ section {
     text-align: center;
 }
 
-
-
 .intro img {
     margin-top: 78px;
     padding-bottom: 92px;
@@ -67,8 +67,7 @@ section {
     font-size: 21px;
     font-weight: 700;
     max-width: 450px;
-    margin:0 auto 21px;
-
+    margin: 0 auto 21px;
 }
 
 .background-one {
@@ -129,14 +128,13 @@ section {
 .list-item:first-child .item-container {
     padding: 53px 20px 40px;
     width: 33%;
-    float: left;  
+    float: left;
     box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
-    
 }
 
-.list-item:first-child .item-container::after{
+.list-item:first-child .item-container::after {
     content: '';
     display: table;
     clear: both;

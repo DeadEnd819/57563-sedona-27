@@ -1,15 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: #000;
     text-transform: uppercase;
-
     background-color: #f2f2f2;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 a {
@@ -24,13 +30,13 @@ a {
     box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
 
+
 /*=======================================HEADER===============================================*/
 
 .main-header-logo {
     display: block;
     position: absolute;
     left: 44.2%;
-
     width: 140px;
     margin: 0 auto;
 }
@@ -47,11 +53,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
     min-height: 56px;
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
@@ -65,7 +69,6 @@ a {
     margin-right: auto;
 }
 
-
 .site-navigation a {
     font-weight: 700;
     color: #000;
@@ -76,6 +79,11 @@ a {
     color: #81b3d2;
 }
 
+.site-navigation a:active {
+    color: #b2b2b2;
+}
+
+
 /*====================================MAIN=================================================*/
 
 .intro {
@@ -83,9 +91,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     min-height: 518px;
-
     background-image: url("../img/background-main.jpg");
     background-position: 0 -55px;
     background-repeat: no-repeat;
@@ -130,6 +136,7 @@ a {
     top: -55px;
 }
 
+
 /*==================================Features========================================*/
 
 .features-list,
@@ -150,7 +157,6 @@ a {
 .features-list {
     min-height: 1100px;
 }
-
 
 .list-item {
     text-align: center;
@@ -203,10 +209,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 400px;
     min-height: 330px;
-
 }
 
 .sub-list-item h2 {
@@ -229,6 +233,7 @@ a {
     background-repeat: no-repeat;
     background-position: center 60px;
 }
+
 .list-item:nth-child(2) .sub-list-item:nth-child(3) {
     background-image: url(../img/icon-gift.svg);
     background-repeat: no-repeat;
@@ -238,24 +243,76 @@ a {
 .list-item:last-child {
     background-color: #eeeeee;
 }
+
+.sub-list-interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    min-height: 256px;
+}
+
+
+/*=======================================FORM===============================================*/
+
+.interested {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 292px;
+    text-align: center;
+}
+
+.interested h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 25px;
+}
+
+.interested p {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.search-form-btn {
+    width: 568px;
+    height: 86px;
+    border: none;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #766357;
+    color: #ffffff;
+}
+
+.search-form-btn:hover,
+.search-form-btn:focus {
+    background-color: #604e43;
+}
+
+.search-form-btn:active {
+    background-color: #503e33;
+    color: #857871;
+}
+
+
 /*=======================================FOOTER==============================================*/
 
 .main-footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     position: absolute;
     bottom: 0;
     width: 1200px;
     padding: 0;
     padding-top: 36px;
     padding-bottom: 32px;
-
     background-color: #ffffff;
     opacity: 0.9;
-
-    
 }
 
 .contacts,
@@ -267,7 +324,6 @@ a {
 
 .contacts {
     flex-direction: column;
-    
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -290,11 +346,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 46px;
     height: 48px;
     margin-right: 6px;
-
     background-color: #81b3d2;
 }
 
@@ -333,3 +387,176 @@ a {
 .copyright-btn:active path {
     fill: #bdbbbc;
 }
+
+
+/*==========================================CATALOG=============================================*/
+
+.site-navigation .activ-page {
+    color: #766357;
+}
+
+.search-hotels {
+    background-image: url(../img/background-blurry.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -55px;
+    background-color: #000000;
+}
+
+
+/*=======================================FILTER================================================*/
+
+.filter {
+    display: flex;
+    padding: 26px 74px 30px 72px;
+    color: #ffffff;
+    line-height: 21px;
+}
+
+.filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter .infrastructure {
+    margin-right: 115px;
+}
+
+.infrastructure legend,
+.type-housing legend {
+    margin-bottom: 26px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+.filter .filter-range {
+    margin-left: 346px;
+    width: 330px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+
+/*===================================END=FILTER================================================*/

@@ -559,4 +559,44 @@ a {
 /*---------------------------------------------------------------------------------------------*/
 
 
-/*===================================END=FILTER================================================*/
+/*===================================SORTING================================================*/
+
+.sorting {
+    display: flex;
+    align-items: center;
+    min-height: 86px;
+}
+
+.sorting ul {
+    display: flex;
+    list-style: none;
+}
+
+.up-btn path {
+    fill: #cacaca;
+}
+
+.up-btn:hover path,
+.up-btn:focus path {
+    fill: #231f20;
+}
+
+.up-btn:active path {
+    fill: #81b3d2;
+}
+
+.down-btn path {
+    fill: #81b3d2;
+}
+
+/*===========================================HOTELS============================================*/
+
+.hotels-list-item li {
+    display: flex;
+}
+
+/*=========================================FOOTER-STATIC===========================================*/
+
+.footer-static {
+    position: static;
+}

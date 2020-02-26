@@ -81,64 +81,84 @@
                 </form>
             </div>
             <div class="sorting">
-                <span>Найдено: 3</span>
-                <span>Сортировка:</span>
-                <ul>
-                    <li><a href="#">По цене</a></li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По рейтингу</a></li>
+                <span class="">Найдено: 3</span>
+                <span class="sort-title">Сортировка:</span>
+                <ul class="sort-list">
+                    <li class="sort-list-item"><a href="#">По цене</a></li>
+                    <li class="sort-list-item"><a href="#">По типу</a></li>
+                    <li class="sort-list-item"><a href="#">По рейтингу</a></li>
                 </ul>
-                <ul>
-                    <li>
-                        <a href="#" class="icon-up" aria-label="Сортировка по возрастанию"></a>
+                <ul class="up-down-list">
+                    <li class="up-list-item">
+                        <a href="#" class="up-btn" aria-label="Сортировка по возрастанию">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                            </svg>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#" class="icon-down" aria-label="Сортировка по убыванию"></a>
+                    <li class="down-list-item">
+                        <a class="down-btn" aria-label="Сортировка по убыванию">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
             <section class="hotels">
-                <ul>
-                    <li>
+                <ul class="hotels-list-item">
+                    <li class="hotels-list-item">
                         <img src="img/photo-amara-resort-and-spa.jpg" width="135" height="90" alt="Amara resort & spa">
                         <h2>
                             <a href="#">Amara resort & spa</a>
                         </h2>
-                        <span>Гостиница</span>
-                        <span>от 4000 р.</span>
-                        <span>Рейтинг: 8,5</span>
-                        <div class="star star-four"></div>
-                        <a href="#" class="btn details">Подробнее</a>
-                        <a href="#" class="btn reserve">Забронировать</a>
+                        <div>
+                           <span>Гостиница</span>
+                           <span>от 4000 р.</span>                        
+                           <a href="#" class="btn details">Подробнее</a>
+                           <a href="#" class="btn reserve">Забронировать</a>
+                        </div> 
+                        <div>
+                           <div class="star star-four"></div>
+                           <span>Рейтинг: 8,5</span>
+                        </div>
                     </li>
-                    <li>
+                    <li class="hotels-list-item">
                         <img src="img/photo-desert-quail-inn.jpg" width="135" height="90" alt="Desert quail inn">
                         <h2>
                             <a href="">Desert quail inn</a>
                         </h2>
-                        <span>Гостиница</span>
-                        <span>от 3000 р.</span>
-                        <span>Рейтинг: 8,9</span>
-                        <div class="star star-three"></div>
-                        <a href="#" class="btn details">Подробнее</a>
-                        <a href="#" class="btn reserve">Забронировать</a>
+                        <div>
+                            <span>Гостиница</span>
+                            <span>от 3000 р.</span>                      
+                            <a href="#" class="btn details">Подробнее</a>
+                            <a href="#" class="btn reserve">Забронировать</a>
+                        </div>  
+                        <div>                 
+                            <div class="star star-three"></div>
+                            <span>Рейтинг: 8,9</span>
+                        </div> 
                     </li>
-                    <li>
+                    <li class="hotels-list-item">
                         <img src="img/photo-villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at pocodiablo">
                         <h2>
                             <a href="">Villas at pocodiablo</a>
                         </h2>
-                        <span>Гостиница</span>
-                        <span>от 2000 р.</span>
-                        <span>Рейтинг: 9,2</span>
-                        <div class="star star-two"></div>
-                        <a href="#" class="btn details">Подробнее</a>
-                        <a href="#" class="btn reserve">Забронировать</a>
+                        <div>
+                            <span>Гостиница</span>
+                            <span>от 2000 р.</span>                        
+                            <a href="#" class="btn details">Подробнее</a>
+                            <a href="#" class="btn reserve">Забронировать</a>
+                        </div>    
+                        <div>                 
+                            <div class="star star-two"></div>
+                            <span>Рейтинг: 9,2</span>
+                        </div>
                     </li>
                 </ul>
             </section>
         </main>
-        <footer class="main-footer">
+        <footer class="main-footer footer-static">
             <div class="contacts">
                 <span>#visitsedona</span>
                 <p>Тел: <a class="tel" href="tel:74956660266">+7 (495) 666-02-66</a></p>

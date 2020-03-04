@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-.wrapper {
+.container {
     position: relative;
     margin: 0 auto;
     max-width: 1200px;
@@ -391,7 +391,7 @@ a {
 
 /*==========================================CATALOG=============================================*/
 
-.site-navigation .activ-page {
+.site-navigation .active-page {
     color: #766357;
 }
 
@@ -416,6 +416,10 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.filter li {
+    margin-bottom: 23px;
 }
 
 .filter fieldset {

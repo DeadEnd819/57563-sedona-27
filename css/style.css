@@ -483,8 +483,12 @@ a {
 
 /*---------------------------------------------------------------------------------------------*/
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .filter .filter-range {
-    margin-left: 346px;
+    margin-left: 360px;
     width: 330px;
     color: #ffffff;
     text-transform: uppercase;
@@ -527,7 +531,7 @@ a {
 
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
+    width: 75px;
     padding-left: 65px;
 }
 

@@ -265,6 +265,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     min-height: 292px;
     text-align: center;
 }
@@ -301,6 +302,32 @@ a {
     background-color: #503e33;
     color: #857871;
 }
+
+
+/*******************************************POPUP*********************************************/
+
+.search {
+    position: absolute;
+    box-sizing: border-box;
+    width: 568px;
+    padding: 55px;
+    top: 292px;
+    background-color: #ffffff;
+}
+
+.search-btn {
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 458px;
+    padding: 17px 0;
+    border: none;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+
+/*********************************************************************************************/
 
 
 /*=======================================FOOTER==============================================*/

@@ -27,7 +27,7 @@ a {
     margin: 0 auto;
     max-width: 1200px;
     background-color: #ffffff;
-    box-shadow: 0 -5px 9px 2px #dbdbdb;
+    box-shadow: 0 -5px 9px 5px #dfdfdf;
 }
 
 
@@ -36,12 +36,13 @@ a {
 .main-header-logo {
     display: block;
     position: absolute;
-    left: 44.2%;
+    left: 50%;
+    margin-left: -70px;
     width: 140px;
-    margin: 0 auto;
 }
 
 .main-navigation {
+    position: relative;
     font-size: 14px;
     line-height: 26px;
     color: #000;
@@ -308,11 +309,119 @@ a {
 
 .search {
     position: absolute;
+    top: 292px;
     box-sizing: border-box;
     width: 568px;
     padding: 55px;
-    top: 292px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
     background-color: #ffffff;
+    box-shadow: 0 5px 10px 1px #a7a7a7;
+}
+
+.search-by-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-by-date div {
+    position: relative;
+}
+
+.search-by-date label {
+    margin-right: auto;
+}
+
+.search-by-date input {
+    width: 346px;
+    margin-left: 15px;
+    padding: 7px 13px;
+}
+
+.calendar-btn {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    padding: 0;
+    fill: #cacaca;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar-btn:hover,
+.calendar-btn:focus {
+    fill: #000000;
+}
+
+.calendar-btn:active {
+    fill: #81b3d2;
+}
+
+.search-by-date div,
+.search-by-age,
+.search-by-age div {
+    display: flex;
+    align-items: center;
+}
+
+.search-by-age input {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+.adult label {
+    margin-right: 41px;
+}
+
+.child {
+    margin-left: auto;
+}
+
+.child label {
+    margin-right: 27px;
+}
+
+.age-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #a9a9a9;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+}
+
+.age-btn:hover,
+.age-btn:focus {
+    color: #000000;
+}
+
+.age-btn:active {
+    color: #81b3d2;
+}
+
+.search-by-date div,
+.search-by-age {
+    margin-bottom: 30px;
+}
+
+.search-by-age {
+    margin-top: -10px;
+}
+
+.search-by-date input,
+.search-by-age input {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #f2f2f2;
+    border: none;
 }
 
 .search-btn {
@@ -320,6 +429,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     width: 458px;
+    margin-top: 25px;
     padding: 17px 0;
     border: none;
     color: #ffffff;
@@ -365,6 +475,7 @@ a {
 
 .contacts p {
     margin: 0;
+    letter-spacing: 0.002px;
 }
 
 .tel {
@@ -448,17 +559,11 @@ a {
     line-height: 21px;
 }
 
-.filter ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .filter li {
     margin-bottom: 23px;
 }
 
-.filter fieldset {
+.reset-fieldset {
     border: none;
     margin: 0;
     padding: 0;
@@ -479,29 +584,37 @@ a {
 
 /****************************************************************************************************/
 
-.cb-label {
-    cursor: pointer;
-    padding-top: 3px;
-    margin-left: 40px;
+.checkbox-label {
     position: relative;
+    margin-left: 40px;
+    padding-top: 3px;
+    cursor: pointer;
 }
 
-.filter-cb[type="checkbox"]+.cb-decor {
-    background-image: url("../img/icon-checkbox-off.svg");
-    width: 23px;
-    height: 23px;
-    position: absolute;
-    top: 0;
-    left: -40px
-}
-
-.filter-cb[type="checkbox"]:checked+.cb-decor {
-    background-image: url("../img/icon-checkbox-on.svg");
-    width: 27px;
-    height: 23px;
+.filter-checkbox[type="checkbox"]+.checkbox-decor {
     position: absolute;
     top: 0;
     left: -40px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/icon-checkbox-off.svg");
+}
+
+.filter-checkbox[type="checkbox"]:checked+.checkbox-decor {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/icon-checkbox-on.svg");
+}
+
+.filter-checkbox[type="checkbox"]:disabled+.checkbox-decor {
+    background-image: url("../img/icon-checkbox-off-disabled.svg");
+}
+
+.filter-checkbox[type="checkbox"]:checked:disabled+.checkbox-decor {
+    background-image: url("../img/icon-checkbox-on-disabled.svg");
 }
 
 
@@ -510,7 +623,7 @@ a {
 
 /*---------------------------------------------------------------------------------------------*/
 
-input[type=number] {
+.price-controls input[type=number] {
     -moz-appearance: textfield;
 }
 
@@ -681,10 +794,10 @@ input[type=number] {
     border: none;
 }
 
-.sort-by-category .categor-active,
-.sort-by-category .categor-active:hover,
-.sort-by-category .categor-active:focus,
-.sort-by-category .categor-active:active {
+.sort-by-category .category-active,
+.sort-by-category .category-active:hover,
+.sort-by-category .category-active:focus,
+.sort-by-category .category-active:active {
     color: #81b3d2;
     border: none;
 }
@@ -719,7 +832,6 @@ input[type=number] {
 /*===========================================HOTELS============================================*/
 
 .reset-text {
-    padding: 0;
     margin: 0;
 }
 
@@ -838,9 +950,18 @@ input[type=number] {
 }
 
 
-/*=========================================FOOTER-STATIC===========================================*/
+/*=========================================FOOTER-ABSOLUTE===========================================*/
 
 .footer-absolute {
     position: absolute;
     bottom: 0;
+    padding-bottom: 43px;
+}
+
+.footer-absolute .contacts {
+    margin-left: 123px;
+}
+
+.footer-absolute .social {
+    margin-left: 6px;
 }

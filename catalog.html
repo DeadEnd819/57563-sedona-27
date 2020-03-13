@@ -28,59 +28,59 @@
             <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
             <div class="search-hotels">
                 <form action="https://echo.htmlacademy.ru" class="filter" method="GET">
-                    <fieldset class="infrastructure">
+                    <fieldset class="infrastructure reset-fieldset">
                         <legend>Инфраструктура:</legend>
-                        <ul>
+                        <ul class="reset-list">
                             <li>
-                                <label class="cb-label" for="pool">
-                                    <input type="checkbox" class="filter-cb visually-hidden" name="pool" id="pool" checked>
-                                    <span class="cb-decor"></span>
+                                <label class="checkbox-label" for="pool">
+                                    <input type="checkbox" class="filter-checkbox visually-hidden" name="pool" id="pool" checked>
+                                    <span class="checkbox-decor"></span>
                                     Бассейн
                                 </label>
                             </li>
                             <li>
-                                <label class="cb-label" for="parking">
-                                    <input type="checkbox" class="filter-cb visually-hidden" name="parking" id="parking">
-                                    <span class="cb-decor"></span>
+                                <label class="checkbox-label" for="parking">
+                                    <input type="checkbox" class="filter-checkbox visually-hidden" name="parking" id="parking">
+                                    <span class="checkbox-decor"></span>
                                     Парковка
                                 </label>
                             </li>
                             <li>
-                                <label class="cb-label" for="wi-fi">
-                                    <input type="checkbox" class="filter-cb visually-hidden" name="wi-fi" id="wi-fi">
-                                    <span class="cb-decor"></span>
+                                <label class="checkbox-label" for="wi-fi">
+                                    <input type="checkbox" class="filter-checkbox visually-hidden" name="wi-fi" id="wi-fi">
+                                    <span class="checkbox-decor"></span>
                                     Wi-Fi
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="type-housing">
+                    <fieldset class="type-housing reset-fieldset">
                         <legend>Тип жилья:</legend>
-                        <ul>
+                        <ul class="reset-list">
                             <li>
-                                <label class="cb-label" for="hotel">
-                                     <input type="checkbox" class="filter-cb visually-hidden" name="hotel" id="hotel" checked>
-                                     <span class="cb-decor"></span>
+                                <label class="checkbox-label" for="hotel">
+                                     <input type="checkbox" class="filter-checkbox visually-hidden" name="hotel" id="hotel" checked>
+                                     <span class="checkbox-decor"></span>
                                      Гостиница
                                 </label>
                             </li>
                             <li>
-                                <label class="cb-label" for="motel">
-                                    <input type="checkbox" class="filter-cb visually-hidden" name="motel" id="motel" checked>
-                                    <span class="cb-decor"></span>
+                                <label class="checkbox-label" for="motel">
+                                    <input type="checkbox" class="filter-checkbox visually-hidden" name="motel" id="motel" checked>
+                                    <span class="checkbox-decor"></span>
                                     Мотель
                                 </label>
                             </li>
                             <li>
-                                <label class="cb-label" for="apartments">
-                                    <input type="checkbox" class="filter-cb visually-hidden" name="apartments" id="apartments" checked>
-                                    <span class="cb-decor"></span>
+                                <label class="checkbox-label" for="apartments">
+                                    <input type="checkbox" class="filter-checkbox visually-hidden" name="apartments" id="apartments" checked>
+                                    <span class="checkbox-decor"></span>
                                     Апартаменты
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="filter-range">
+                    <fieldset class="filter-range reset-fieldset">
                         <legend class="filter-range-title">Стоимость в сутки (р):</legend>
                         <div class="price-controls">
                             <label class="min-price">от <input type="number" name="min-price" value="0"></label>
@@ -101,7 +101,7 @@
                 <span class="sort-result">Найдено: 3</span>
                 <span class="sort-title">Сортировка:</span>
                 <ul class="sort-by-category reset-list">
-                    <li><a class="categor-active">По цене</a></li>
+                    <li><a class="category-active">По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По рейтингу</a></li>
                 </ul>
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                         <div class="hotel-rating">
-                            <div class="star star-four"></div>
+                            <div class="star star-four" title="Четыре звезды"></div>
                             <span>Рейтинг: 8,5</span>
                         </div>
                     </li>
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                         <div class="hotel-rating">
-                            <div class="star star-three"></div>
+                            <div class="star star-three" title="Три звезды"></div>
                             <span>Рейтинг: 8,9</span>
                         </div>
                     </li>
@@ -171,7 +171,7 @@
                             </div>
                         </div>
                         <div class="hotel-rating">
-                            <div class="star star-two"></div>
+                            <div class="star star-two" title="Две звезды"></div>
                             <span>Рейтинг: 9,2</span>
                         </div>
                     </li>

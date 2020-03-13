@@ -247,6 +247,7 @@ a {
 
 .features-item:last-child {
     background-color: #eeeeee;
+    z-index: 2;
 }
 
 .sub-list-interest {
@@ -269,6 +270,13 @@ a {
     position: relative;
     min-height: 292px;
     text-align: center;
+    z-index: 1;
+}
+
+.wrapper {
+    width: 600px;
+    background-color: #ffffff;
+    z-index: 1;
 }
 
 .interested h2 {
@@ -313,11 +321,17 @@ a {
     box-sizing: border-box;
     width: 568px;
     padding: 55px;
+    margin-top: -395px;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
     background-color: #ffffff;
     box-shadow: 0 5px 10px 1px #a7a7a7;
+    transition: all 0.8s;
+}
+
+.search-open {
+    margin-top: 0px;
 }
 
 .search-by-date {

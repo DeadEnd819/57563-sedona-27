@@ -3,5 +3,5 @@ var popup = document.querySelector(`.search`);
 
 btn.addEventListener(`click`, function(evt) {
     evt.preventDefault();
-    popup.classList.toggle(`search-open`);
+    popup.classList.toggle(`search-close`);
 })

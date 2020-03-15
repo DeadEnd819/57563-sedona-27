@@ -593,13 +593,14 @@ a {
 
 .filter {
     display: flex;
-    padding: 26px 74px 12px 72px;
+    padding: 26px 72px 6px 72px;
     color: #ffffff;
     line-height: 21px;
+    letter-spacing: 0.08px;
 }
 
 .filter li {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 
 .reset-fieldset {
@@ -609,7 +610,7 @@ a {
 }
 
 .filter .infrastructure {
-    margin-right: 115px;
+    margin-right: 118px;
 }
 
 .infrastructure legend,
@@ -668,13 +669,13 @@ a {
 
 .filter .filter-range {
     margin-left: 360px;
-    width: 330px;
+    width: 352px;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 .filter-range-title {
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -682,7 +683,7 @@ a {
 
 .price-controls {
     position: relative;
-    height: 36px;
+    height: 32px;
     margin-bottom: 20px;
     font-size: 0;
     border: 2px solid #ffffff;
@@ -702,6 +703,8 @@ a {
 
 .price-controls label {
     display: inline-block;
+    position: relative;
+    bottom: 4px;
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
@@ -712,6 +715,10 @@ a {
 .price-controls .max-price {
     width: 75px;
     padding-left: 65px;
+}
+
+.price-controls .max-price {
+    left: 5px;
 }
 
 .price-controls input {
@@ -747,12 +754,12 @@ a {
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    box-shadow: 0 2px 1px 0 rgba(172, 172, 172, 0.5);
     cursor: pointer;
 }
 
 .range-toggle:hover {
-    background: #1c4f80;
+    transform: scale(1.15);
 }
 
 .range-toggle-min {
@@ -765,8 +772,8 @@ a {
 
 .btn-transparent {
     display: block;
-    margin: 0 auto;
-    padding: 6px 35px;
+    margin-left: 85px;
+    padding: 6px 34px 6px 33px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -791,16 +798,16 @@ a {
 .sorting {
     display: flex;
     align-items: baseline;
-    padding: 30px 72px;
+    padding: 30px 72px 28px 72px;
 }
 
-.sorting span:first-child {
+.sort-result {
     font-size: 21px;
     font-weight: 600;
-    margin-right: 49px;
+    margin-right: 47px;
 }
 
-.sorting span:nth-child(2) {
+.sort-title {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -814,8 +821,12 @@ a {
     line-height: 18px;
 }
 
-.sort-by-category li {
-    padding-right: 30px;
+.sort-by-price {
+    padding-right: 33px;
+}
+
+.sort-by-type {
+    padding-right: 34px;
 }
 
 .sort-by-category a {
@@ -876,7 +887,7 @@ a {
 
 .hotels-list li {
     display: flex;
-    height: 90px;
+    flex-wrap: wrap;
     padding: 30px 72px;
     border-top: 1px solid #e5e5e5;
 }
@@ -889,10 +900,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: 30px;
 }
 
 .hotel-name {
+    width: 258px;
     font-size: 21px;
     font-weight: 700;
     color: #000000;

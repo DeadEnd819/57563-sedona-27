@@ -88,6 +88,23 @@ a {
     color: #b2b2b2;
 }
 
+.info {
+    padding-right: 4px;
+}
+
+.photo {
+    padding-left: 2px;
+}
+
+.map {
+    padding-left: 4px;
+    letter-spacing: 0.5px;
+}
+
+.housing {
+    padding-left: 15px;
+}
+
 
 /*====================================MAIN=================================================*/
 
@@ -342,6 +359,7 @@ a {
 
 .search-by-date label {
     margin-right: auto;
+    letter-spacing: 0.25px;
 }
 
 .search-by-date input {
@@ -397,12 +415,16 @@ a {
 .age-btn {
     width: 38px;
     height: 38px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     color: #a9a9a9;
     background-color: #f2f2f2;
     border: none;
     cursor: pointer;
+}
+
+.minus {
+    padding-bottom: 2px;
 }
 
 .age-btn:hover,
@@ -447,7 +469,6 @@ a {
 }
 
 .search-by-age input:focus {
-    height: 34px;
     background-color: transparent;
     outline: 2px solid #e5e5e5;
     z-index: 1;

@@ -68,8 +68,6 @@ a {
     text-align: center;
 }
 
-.site-navigation li:nth-child(2) {}
-
 .site-navigation a {
     padding: 15px 0;
     display: block;
@@ -194,12 +192,12 @@ a {
     line-height: 21px;
 }
 
-.features-item:nth-child(odd) {
+.blue-item {
     background-color: #81b3d2;
     color: #ffffff;
 }
 
-.features-item:nth-child(odd) .item-content {
+.blue-item .item-content {
     padding: 46px 47.5px 50px;
     box-sizing: border-box;
 }
@@ -214,12 +212,12 @@ a {
     flex-wrap: wrap;
 }
 
-.features-sub-list:first-child .sub-list-item {
+.house,
+.food,
+.gift {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 400px;
-    min-height: 330px;
+    padding: 82px 50px;
 }
 
 .sub-list-item h2 {
@@ -231,25 +229,25 @@ a {
     margin-top: 25px;
 }
 
-.features-item:nth-child(2) .sub-list-item:nth-child(1) {
+.house {
     background-image: url(../img/icon-home.svg);
     background-repeat: no-repeat;
     background-position: center 60px;
 }
 
-.features-item:nth-child(2) .sub-list-item:nth-child(2) {
+.food {
     background-image: url(../img/icon-burger.svg);
     background-repeat: no-repeat;
     background-position: center 60px;
 }
 
-.features-item:nth-child(2) .sub-list-item:nth-child(3) {
+.gift {
     background-image: url(../img/icon-gift.svg);
     background-repeat: no-repeat;
     background-position: center 55px;
 }
 
-.features-item:last-child {
+.advantages {
     background-color: #eeeeee;
     z-index: 2;
 }
@@ -912,7 +910,7 @@ a {
     border-top: 1px solid #e5e5e5;
 }
 
-.hotels-list li:last-child {
+.last-hotel {
     border-bottom: 1px solid #e5e5e5;
 }
 

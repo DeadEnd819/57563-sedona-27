@@ -68,9 +68,7 @@ a {
     text-align: center;
 }
 
-.site-navigation li:nth-child(2) {
-    margin-right: 20%;
-}
+.site-navigation li:nth-child(2) {}
 
 .site-navigation a {
     padding: 15px 0;
@@ -93,6 +91,7 @@ a {
 }
 
 .photo {
+    margin-right: 20%;
     padding-left: 2px;
 }
 

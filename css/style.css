@@ -248,7 +248,7 @@ a {
 
 .advantages {
     background-color: #eeeeee;
-    z-index: 2;
+    z-index: 3;
 }
 
 .sub-list-interest {
@@ -280,13 +280,13 @@ a {
     position: relative;
     min-height: 292px;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .wrapper {
     width: 600px;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 2;
 }
 
 .interested h2 {
@@ -394,6 +394,7 @@ a {
     width: 38px;
     height: 38px;
     text-align: center;
+    z-index: 1;
 }
 
 .adult label {
@@ -467,7 +468,6 @@ a {
 .search-by-age input:focus {
     background-color: transparent;
     outline: 2px solid #e5e5e5;
-    z-index: 1;
 }
 
 .search-btn {
@@ -648,7 +648,9 @@ a {
     cursor: pointer;
 }
 
-.filter-checkbox[type="checkbox"]+.checkbox-decor {
+.filter-checkbox[type="checkbox"]+.checkbox-decor,
+.filter-checkbox[type="checkbox"]:hover+.checkbox-decor,
+.filter-checkbox[type="checkbox"]:focus+.checkbox-decor {
     position: absolute;
     top: 0;
     left: -40px;
@@ -657,7 +659,9 @@ a {
     background-image: url("../img/icon-checkbox-off.svg");
 }
 
-.filter-checkbox[type="checkbox"]:checked+.checkbox-decor {
+.filter-checkbox[type="checkbox"]:checked+.checkbox-decor,
+.filter-checkbox[type="checkbox"]:checked:hover+.checkbox-decor,
+.filter-checkbox[type="checkbox"]:checked:focus+.checkbox-decor {
     position: absolute;
     top: 0;
     left: -40px;
@@ -680,7 +684,8 @@ a {
 
 /*---------------------------------------------------------------------------------------------*/
 
-.price-controls input[type=number] {
+.price-controls input[type=number],
+.search-by-age input[type=number] {
     -moz-appearance: textfield;
 }
 
@@ -922,7 +927,7 @@ a {
 }
 
 .hotel-name {
-    width: 258px;
+    width: 775px;
     font-size: 21px;
     font-weight: 700;
     color: #000000;
@@ -942,6 +947,8 @@ a {
 .price {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 257px;
     margin-bottom: 7px;
 }
 
@@ -1033,4 +1040,11 @@ a {
 
 .footer-absolute .social {
     margin-left: 6px;
+}
+
+
+/*===========================================ERROR=================================================*/
+
+form .error {
+    border: 2px solid #fc3333;
 }

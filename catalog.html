@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Гостиницы - Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -84,7 +84,7 @@
                         <legend class="filter-range-title">Стоимость в сутки (р):</legend>
                         <div class="price-controls">
                             <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-                            <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+                            <label class="max-price">до <input type="number" name="max-price" value="3000" min="1"></label>
                         </div>
                         <div class="range-controls">
                             <div class="scale">
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                         <div class="hotel-rating">
-                            <div class="star star-four" title="Четыре звезды"></div>
+                            <div class="star star-four"><span class="visually-hidden">Четыре звезды</span></div>
                             <span>Рейтинг: 8,5</span>
                         </div>
                     </li>
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                         <div class="hotel-rating">
-                            <div class="star star-three" title="Три звезды"></div>
+                            <div class="star star-three"><span class="visually-hidden">Три звезды</span></div>
                             <span>Рейтинг: 8,9</span>
                         </div>
                     </li>
@@ -171,7 +171,7 @@
                             </div>
                         </div>
                         <div class="hotel-rating">
-                            <div class="star star-two" title="Две звезды"></div>
+                            <div class="star star-two"><span class="visually-hidden">Две звезды</span></div>
                             <span>Рейтинг: 9,2</span>
                         </div>
                     </li>

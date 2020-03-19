@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -121,13 +121,13 @@
                             <div class="adult">
                                 <label for="adult">Взрослые: </label>
                                 <button type="button" class="age-btn minus">–</button>
-                                <input type="text" name="adults" id="adult" placeholder="0" value="2">
+                                <input type="number" name="adults" id="adult" min="1" placeholder="0" value="2">
                                 <button type="button" class="age-btn">+</button>
                             </div>
                             <div class="child">
                                 <label for="child">Дети: </label>
                                 <button type="button" class="age-btn minus">–</button>
-                                <input type="text" name="children" id="child" placeholder="0" value="0">
+                                <input type="number" name="children" id="child" min="0" placeholder="0" value="0">
                                 <button type="button" class="age-btn">+</button>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

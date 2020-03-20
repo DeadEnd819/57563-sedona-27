@@ -63,6 +63,8 @@ a {
 
 .site-navigation li {
     width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #fff;
     text-align: center;
@@ -110,6 +112,7 @@ a {
     flex-direction: column;
     position: relative;
     background-image: url("../img/background-main.jpg");
+    background-color: #516170;
     background-position: 0 -55px;
     background-repeat: no-repeat;
 }
@@ -198,6 +201,8 @@ a {
 
 .blue-item .item-content {
     padding: 46px 47.5px 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -328,6 +333,8 @@ a {
 .search {
     position: absolute;
     top: 292px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 568px;
     padding: 55px;
@@ -446,6 +453,8 @@ a {
 }
 
 .search input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 14px;
     font-weight: 700;
@@ -838,16 +847,14 @@ a {
 
 .sort-by-category {
     display: flex;
+    flex-wrap: wrap;
+    width: 740px;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
 }
 
-.sort-by-price {
-    padding-right: 33px;
-}
-
-.sort-by-type {
+.sort-by-category li {
     padding-right: 34px;
 }
 
@@ -964,6 +971,7 @@ a {
 
 .btn {
     display: inline-block;
+    vertical-align: middle;
     color: #ffffff;
     padding: 3px 17px 3px 16px;
     line-height: 21px;
